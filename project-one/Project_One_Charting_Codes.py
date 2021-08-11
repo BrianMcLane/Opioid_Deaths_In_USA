@@ -79,3 +79,13 @@ plt.xticks(rotation='vertical')
 # plt.yticks(yticks)
 plt.xlim(-1,49)
 plt.show()
+
+
+# Illinois Line chart (comparing counties)
+yyticks = [0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+labels = ['Cook','DuPage']
+plt.plot(cook['Year'], cook['Death Total'])
+plt.plot(dupage['Year'], dupage['Death Total'])
+plt.yticks(yyticks)
+plt.legend(labels)
+plt.show()
